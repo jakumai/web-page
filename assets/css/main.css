@@ -1871,3 +1871,22 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+.background {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/orange.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.19; /* Ajusta la opacidad aquí */
+  z-index: -1;
+}
