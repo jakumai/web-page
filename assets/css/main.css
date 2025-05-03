@@ -1877,8 +1877,6 @@ section,
   z-index: 1;
   overflow: hidden;
 }
-
-
 .background::before {
   content: "";
   position: absolute;
@@ -1910,4 +1908,33 @@ section,
 /* Hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #e55a00; /* un poco más oscuro al pasar el mouse */
+}
+.section.background-2 {
+  background-image: url('../img/orange.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  height: 50vh; /* o ajusta según lo que necesites */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.section.background-2::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* oscurece el fondo */
+  z-index: 0;
+}
+
+.overlay-text-container {
+  z-index: 2;
+  max-width: 800px;
 }
