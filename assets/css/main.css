@@ -1888,7 +1888,7 @@ section,
   background-image: url(../img/orange.png);
   background-size: cover;
   background-position: center;
-  opacity: 0.19; /* Ajusta la opacidad aquí */
+  opacity: 0.1; /* Ajusta la opacidad aquí */
   z-index: -1;
 }
 /* Estilo general del scroll */
