@@ -11,6 +11,7 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
@@ -1889,4 +1890,24 @@ section,
   background-position: center;
   opacity: 0.19; /* Ajusta la opacidad aquí */
   z-index: -1;
+}
+/* Estilo general del scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Fondo del track (canal del scroll) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* color del fondo */
+}
+
+/* Color del "dedo" del scroll */
+::-webkit-scrollbar-thumb {
+  background: #ff6600;  /* color naranja personalizado */
+  border-radius: 10px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e55a00; /* un poco más oscuro al pasar el mouse */
 }
